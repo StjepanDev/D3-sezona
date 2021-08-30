@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dolazak turista u RH 7.mj 2021</title>
+</head>
+
+<body>
+
+  <div class="canvas"> </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase-firestore.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "******************",
+      authDomain: "d3-sezona.firebaseapp.com",
+      projectId: "d3-sezona",
+      storageBucket: "d3-sezona.appspot.com",
+      messagingSenderId: "58592005383",
+      appId: "1:58592005383:web:c61ae7797c3223c84149a2",
+      measurementId: "G-W60SLN0VRM"
+    };
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const firestore = firebase.firestore();
+    const settings = { timestampsInSnapshots: true };
+    firestore.settings(settings);
+    const db = firebase.firestore();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
